@@ -65,7 +65,7 @@
             self.current.model = value;
 
             if (self.utils.isFunction(voice)) voice.apply(self, args);
-            else voice.innerHTML = value;
+            else voice.value = value;
 
             return self;
         },
